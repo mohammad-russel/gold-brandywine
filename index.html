@@ -37,7 +37,7 @@
                 <!-- --------------------------------------------------- book -------------------------------------------------- -->
                 <div class="visual">
                     <div class="subvisual">
-                        <img class="bookimg" src="manga1.png" alt="book pic">
+                        <img id="image" class="bookimg" src="manga1.png" alt="book pic">
                         <div class="social">
                             <ul>
                                 <li>
@@ -58,9 +58,9 @@
             </main>
             <!-- ----------------------------------------------- thumb --------------------------------------------------------------------- -->
             <div class="thumb">
-                <img src="manga1.png" alt="comic book" class="book">
-                <img src="manga2.jpg" alt="comic book" class="book">
-                <img src="manga3.jpg" alt="comic book" class="book">
+                <img src="manga1.png" alt="comic book" id="img1" class="book">
+                <img src="manga2.jpg" alt="comic book" id="img2" class="book">
+                <img src="manga3.jpg" alt="comic book" id="img3" class="book">
             </div>
             <!-- -------------------------------------------  form  ----------------------------------------------------------------------- -->
         </section>
@@ -79,31 +79,31 @@
             </div>
         </section>
     </div>
-<script>
-    document.getElementById("img1").onclick = btn1;
+    <script>
+        document.getElementById("img1").onclick = btn1;
 
-function btn1() {
-    var a = document.getElementById("img1").src;
-    document.getElementById("image").src = a;
+        function btn1() {
+            var a = document.getElementById("img1").src;
+            document.getElementById("image").src = a;
 
-}
+        }
 
-document.getElementById("img2").onclick = btn2;
+        document.getElementById("img2").onclick = btn2;
 
-function btn2() {
-    var a = document.getElementById("img2").src;
-    document.getElementById("image").src = a;
+        function btn2() {
+            var a = document.getElementById("img2").src;
+            document.getElementById("image").src = a;
 
-}
+        }
 
-document.getElementById("img3").onclick = btn3;
+        document.getElementById("img3").onclick = btn3;
 
-function btn3() {
-    var a = document.getElementById("img3").src;
-    document.getElementById("image").src = a;
+        function btn3() {
+            var a = document.getElementById("img3").src;
+            document.getElementById("image").src = a;
 
-}
-    <script/>
+        }
+    </script>
 </body>
 
 
